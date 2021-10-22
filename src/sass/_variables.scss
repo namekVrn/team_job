@@ -1,21 +1,27 @@
 $first_color: #2e2520; // Основной цвет текста
-$second_color: #876655; // Навигация в мобильном меню при активном состоянии 
-$button_color: #AB816C; // Заливка кнопок
+$second_color: #876655; // Навигация в мобильном меню при активном состоянии
+$button_color: #ab816c; // Заливка кнопок
 $first_font: 'Montserrat', sans-serif; //Основной шрифт ( навигация, статьи и т.д)
 $style_font: 'Caveat Brush', cursive;
 
 //Обнуляем стили
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-img{
-    display: block;
+img {
+  display: block;
 }
-h1,h2,h3,h4,h5{
-    margin:0;
-    padding:0;
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  margin: 0;
+  padding: 0;
 }
