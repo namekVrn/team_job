@@ -1,9 +1,13 @@
 $first_color: #2e2520; // Основной цвет текста
 $second_color: #876655; // Навигация в мобильном меню при активном состоянии
 $button_color: #ab816c; // Заливка кнопок
-$bgd-color: #E5E5E5; //Основной цвет фона
+$bgd-color: #fffff9; //Основной цвет фона
 $first_font: 'Montserrat', sans-serif; //Основной шрифт ( навигация, статьи и т.д)
 $style_font: 'Caveat Brush', cursive;
+
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;
 
 //Обнуляем стили
 
@@ -27,5 +31,3 @@ ul {
   padding: 0;
   list-style: none;
 }
-
-
