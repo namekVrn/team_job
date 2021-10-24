@@ -1,26 +1,30 @@
-
-@media screen and (min-width: 320px){
-   .footer__content{
-    padding-top: 34px;
-    padding-bottom: 19px;
+.body__bg{
+    background-image: url(../images/footer-img/bublik-x1.png),url(../images/footer-img/bg-mobile-x1.png),url(../images/footer-img/footer-mobi-x1.png),url(../images/footer-img/bg-bm-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 117px,100% 461px,87px,100% 1214px;
+    background-position: 0 0,0 0,100% 100%,bottom 216px left;
+}
+@media (-webkit-min-device-pixel-ratio: 2), not all, (min-resolution: 2dppx), (min-resolution: 192dpi){
+.body__bg {
+    background-image: url(../images/footer-img/bublik-x2.png),url(../images/footer-img/bg-mobile-x1.png),url(../images/footer-img/footer-mobi-x2.png),url(../images/footer-img/bg-bm-mobile.png);
+}
+}
+.body__container{
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 320px){
+    .body__container{
+        width: 320px;
+    }
+    
+   .footer__content{
+    width: 100%;
     border: 1px solid red;
-    background-image: url(../images/footer-img/footer-image-x1.png);
-    background-size: 87px 64px;
-    background-repeat: no-repeat;
-    background-position: right bottom;
    }
-   @media   (min-device-pixel-ratio: 2),
-            (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-            .footer__content {
-                background-image: url(../images/footer-img/footer-image-x2.png);
-                
-            }
-        }
-
+   
    .footer__social{
     display: flex;
     justify-content: center;
@@ -66,6 +70,45 @@
       font-style: normal;
       color: $first_color;
   }
-  
+   
+}
+//tablets
+@media screen and (min-width: 768px){
+    .body__bg{
+        background-image: url(../images/footer-img/bublik-table-x1.png),url(../images/footer-img/bg-table.png),url(../images/footer-img/footer-tablet-x1.png),url(../images/footer-img/bg-bm-table.png);
+        background-repeat: no-repeat;
+        background-size: 305px,100% 622px,153px,100% 1264px;
+        background-position: top right 147px,0 0,100% 100%,bottom 63px left;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2), not all, (min-resolution: 2dppx), (min-resolution: 192dpi){
+    .body__bg {
+        background-image: url(../images/footer-img/bublik-table-x2.png),url(../images/footer-img/bg-table.png),url(../images/footer-img/footer-tablet-x2.png),url(../images/footer-img/bg-bm-table.png);
+    }
+    }
+    .body__container{
+        width: 768px;
+        padding-left: 67px;
+        padding-right: 67px;
+    }
+   
+}
+//desctop
+@media screen and (min-width: 1280px){
+    .body__bg{
+        background-image: url(../images/footer-img/bublik-desc-x1.png),url(../images/footer-img/sp-desc-x1.png),url(../images/footer-img/bg-desc.png),url(../images/footer-img/footer-desc-x1.png),url(../images/footer-img/bg-bm-desc.png);
+        background-repeat: no-repeat;
+        background-size: 584px,130px,100% 1036px,320px,100% 1496px;
+        background-position: 100% 0,0 166px,0 0,100% 100%,0 100%;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2), not all, (min-resolution: 2dppx), (min-resolution: 192dpi){
+    .body__bg {
+        background-image: url(../images/footer-img/bublik-desc-x2.png),url(../images/footer-img/sp-desc-x2.png),url(../images/footer-img/bg-desc.png),url(../images/footer-img/footer-desc-x2.png),url(../images/footer-img/bg-bm-desc.png);
+    }
+    }
+    .body__container{
+        width: 1280px;
+        padding-left: 229px;
+        padding-right: 229px;
+    }
    
 }
