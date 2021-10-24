@@ -74,7 +74,6 @@ ul {
 .reviews {
   padding-top: 13px;
   background-color: #E5E5E5;
-  outline: 1px solid red;
 }
 
 @media screen and (min-width: 768px) {
@@ -116,10 +115,34 @@ ul {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.46;
-  /* identical to box height, or 271% */
   text-align: center;
   color: #2e2520;
   padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__about-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .reviews__Elisabeth,
+  .reviews__john {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews__Elisabeth,
+  .reviews__john {
+    margin-top: -20px;
+  }
 }
 
 .reviews-photo {
@@ -135,13 +158,19 @@ ul {
   margin: 0 auto;
 }
 
+.reviews-rate__four {
+  background-image: url(../images/reviews/rate-4.svg);
+  width: 136px;
+  height: 24px;
+  margin: 0 auto;
+}
+
 .reviews-name {
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.46;
-  /* identical to box height, or 464% */
   text-align: center;
   color: #2e2520;
   margin: 0 auto;
@@ -169,7 +198,6 @@ ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
-  /* identical to box height */
   text-align: center;
   color: #ab816c;
 }
