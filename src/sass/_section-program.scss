@@ -12,6 +12,12 @@
   }
 }
 
+@media screen and (min-width: $desktop) {
+  .container {
+    margin-top: 547px;
+}
+}
+
 .section {
   background-color: $bgd-color;
 }

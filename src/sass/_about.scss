@@ -1,4 +1,9 @@
-
+@media screen and (min-width: $desktop) {
+  body {
+    background-color: $bgd-color;
+    position: relative;
+  }
+}
 
 .about__container {
   position: relative;
@@ -21,6 +26,8 @@
   .about__container {
     padding-left: 71px;
     padding-right: 229px;
+    position: absolute;
+    top: 548px;
   }
 }
 
@@ -148,4 +155,8 @@
     line-height: 1.8;
     margin-bottom: 10px;
   }
+}
+
+.about__image {
+    z-index: -100;
 }
