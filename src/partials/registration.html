@@ -1,1 +1,57 @@
+<form class="reg">
+    <div class="reg__info">
+        <p class="reg-info__title">Registration</p>
+
+        <ul class="reg-info__list">
+            <li class="reg-info__item">May 23, 11:00 New York</li>
+            <li class="reg-info__item">$ 699</li>
+        </ul>
+    </div>
+    
+    <div class="reg__form">
+        <p class="reg-form__title">Apply your personal info for registration</p>
+    
+        <label class="reg-form__label" for="name">
+            <input class="reg-form__input" type="name" name="name" placeholder="Your name">
+        </label>
+        
+        <label class="reg-form__label" for="phone">
+            <input class="reg-form__input" type="phone" name="phone" placeholder="Phone number">
+        </label>
+
+        <label class="reg-form__label" for="email">
+            <input class="reg-form__input" type="email" name="email" placeholder="Email">
+        </label>
+    </div>
+
+    <div class="reg-button">
+        <button class="reg-button__submit" type="submit">Register</button>
+    </div>
+
+    <ul class="reg-img">
+        <li class="reg-img__item-donut">
+            <picture>
+                <source srcset="./images/registration-img/donut768@1x.png 1x, ./images/registration-img/donut768@2x.png 2x"
+                    type="image/png" media="(min-width:768px)">
+                <source srcset="./images/registration-img/donut1280@1x.png 1x, ./images/registration-img/donut1280@2x.png 2x"
+                    type="image/png" media="(min-width:1280px)">
+            
+                <img class="img" src="./images/registration-img/donut1280@1x.png"
+                    srcset="./images/registration-img/donut1280@1x.png 1x, ./images/registration-img/donut1280@2x.png 2x" alt="Бублик">
+            </picture>
+        </li>
+        <li class="reg-img__item-cracker">
+            <picture>
+                <source srcset="./images/registration-img/cracker768@1x.png 1x, ./images/registration-img/cracker768@2x.png 2x"
+                    type="image/png" media="(min-width:768px)">
+                <source srcset="./images/registration-img/cracker1280@1x.png 1x, ./images/registration-img/cracker1280@2x.png 2x"
+                    type="image/png" media="(min-width:1280px)">
+            
+                <img class="img-cracker" src="./images/registration-img/cracker1280@1x.png"
+                    srcset="./images/registration-img/cracker1280@1x.png 1x, ./images/registration-img/cracker1280@2x.png 2x"
+                    alt="Хлопушка">
+            </picture>
+        </li>
+    </ul>
+</form>
 
