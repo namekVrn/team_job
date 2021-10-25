@@ -33,6 +33,7 @@
     color: #2E2520;
     margin-bottom: 30px;
 }
+
 .contact-form__input {
     display: block;
     border: 1px solid #AB816C;
@@ -44,19 +45,18 @@
     margin-left: auto;
     margin-right: auto;
     width: 265px;
+    &::placeholder {
+        font-family: 'Montserrat', sans-serif;;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: rgba(171, 129, 108, 0.5);
+    }
     @media screen and(min-width: 768px) {
         width: 410px;
     }
     @media screen and(min-width: 1280px) {
         width: 430px;
-    }
-    &::placeholder {
-        font-family: $first_font;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 1.25px;
-        color: rgba(171, 129, 108, 0.5);
     }
 }
 .contact-form__input--text {
