@@ -16,7 +16,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    margin-bottom: 27px;
+    margin-bottom: 28px;
 
     .reg-info__title {
       font-family: Caveat Brush;
@@ -95,17 +95,15 @@
       height: 20px;
       border: none;
       background: #fffff9;
-
-      
     }
     .reg-form__input ::placeholder {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 20px;
-        color: rgba(171, 129, 108, 0.5);
-      }
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba(171, 129, 108, 0.5);
+    }
 
     .reg-button {
       margin-bottom: 34px;
