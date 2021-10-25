@@ -44,6 +44,13 @@
   color: $first_color;
 }
 
+@media screen and (min-width: $desktop){
+  .section__text {
+      font-size: 18px;
+      line-height: 1.2;
+  }
+}
+
 .section__text--indent {
   display: block;
   margin-bottom: 10px;
