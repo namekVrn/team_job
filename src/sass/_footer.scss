@@ -19,7 +19,14 @@
     .body__container{
         width: 320px;
     }
-    
+    .footer__content{
+        width: 320px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 19px;
+    }
  
    
    .footer__social{
@@ -87,7 +94,14 @@
         padding-left: 67px;
         padding-right: 67px;
     }
-   
+   .footer__content{
+    width: 634px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 29px;
+    padding-bottom: 22px;
+}
    
 }
 //desctop
@@ -108,5 +122,12 @@
         padding-left: 229px;
         padding-right: 229px;
     }
-   
+    .footer__content{
+        width: 822px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 55px;
+        padding-bottom: 22px;
+    }
 }
