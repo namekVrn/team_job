@@ -22,12 +22,10 @@
   .reviews {
     padding: 13px 71px 40px;
     background-image: url(../images/reviews/bg-tablet.svg);
-    padding: 0;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-
-    background-position-y: -25px;
+    
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -45,8 +43,6 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-
-    background-position-y: -13px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -79,6 +75,9 @@
     font-size: 36px;
     line-height: 1.81;
     padding-bottom: 24px;
+  }
+  @media screen and(min-width: 768px) {
+    margin-top: 21px;
   }
 }
 
