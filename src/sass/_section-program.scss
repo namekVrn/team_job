@@ -7,18 +7,44 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
+    align-items: center;
     padding-left: 67px;
     padding-right: 67px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    padding-left: 228px;
+    padding-right: 228px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .container {
+    margin-top: 547px;
   }
 }
 
 .section {
   background-color: $bgd-color;
+  margin-bottom: 25px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: -5px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 68px;
+  }
 }
 
 .text__content {
   @media screen and (min-width: $tablet) {
     margin-right: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 40px;
   }
 }
 
@@ -28,10 +54,14 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 2.71;
-
-  text-align: center;
-
   color: $first_color;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 10px;
+
+    font-size: 36px;
+    line-height: 1.81;
+  }
 }
 
 .section__text {
@@ -40,21 +70,32 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-
   color: $first_color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 .section__text--indent {
-  display: block;
   margin-bottom: 10px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 21px;
+  }
 }
 
 .text__items {
   margin-bottom: 10px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 21px;
+  }
 }
 
 .text__item::before {
-  content: ">";
+  content: '>';
   font-family: $first_font;
   font-style: normal;
   font-weight: 400;
@@ -66,20 +107,10 @@
 
 .text__item:not(:last-child) {
   margin-bottom: 10px;
-}
 
-.button {
-  margin-bottom: 30px;
-
-  font-family: $style_font;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 3.61;
-
-  border: none;
-  background-color: transparent;
-  color: $button_color;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 15px;
+  }
 }
 
 .feature__set {
@@ -89,6 +120,10 @@
   @media screen and (min-width: $tablet) {
     padding-top: 50px;
   }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 0px;
+  }
 }
 
 .feature__miniset {
@@ -97,6 +132,10 @@
   margin-right: auto;
 
   height: 173px;
+
+  @media screen and (min-width: $desktop) {
+    height: 220px;
+  }
 }
 
 .feature__miniset:not(:last-child) {
@@ -104,6 +143,10 @@
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 55px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 30px;
   }
 }
 
@@ -125,11 +168,16 @@
   width: 142px;
   height: 142px;
 
-  background-image: url("/images/circle.svg");
+  background-image: url('/images/circle.svg');
   background-position-x: 50%;
   background-position-y: 100%;
 
   background-repeat: no-repeat;
+
+  @media screen and (min-width: $desktop) {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 .feature__image {
@@ -156,6 +204,11 @@
   text-align: center;
 
   color: #000000;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.25;
+  }
 }
 
 .feature__text {
@@ -173,6 +226,11 @@
   text-align: center;
 
   color: #000000;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .feature__icon {
@@ -184,4 +242,16 @@
 
   width: 19px;
   height: 18px;
+}
+
+#more-programm:checked ~ .section__text--more {
+  display: block;
+}
+
+#more-programm:checked ~ .about__more .less {
+  display: block;
+}
+
+#more-programm:checked ~ .about__more .more {
+  display: none;
 }

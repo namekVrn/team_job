@@ -1,9 +1,161 @@
-.about__image {
-    position: relative;
+@media screen and (min-width: $desktop) {
+  body {
+    background-color: $bgd-color;
+  }
+}
+
+.about__container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: $mobile;
+  
+}
+
+@media screen and (min-width: $tablet) {
+  .about__container {
+    padding-left: 12px;
+    padding-right: 67px;
+    display: flex;
+    width: $tablet;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .about__container {
+    padding-left: 71px;
+    padding-right: 229px;
+    position: absolute;
+    top: 548px;
+    width: $desktop;
+  }
 }
 
 .about__picture {
-    position: absolute;
-    top: 219px;
-    left: 81px;
+  position: absolute;
+  top: 219px;
+  left: 81px;
 }
+
+@media screen and (min-width: $tablet) {
+  .about__picture {
+    top: 250px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .about__picture {
+    top: 388px;
+    left: 188px;
+  }
+}
+
+.section__text--more {
+  display: none;
+  font-family: $first_font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $first_color;
+}
+
+@media screen and (min-width: $desktop) {
+  .section__text--more {
+    display: block;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
+.more {
+  font-family: $style_font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 3.6;
+  color: $button_color;
+}
+
+@media screen and (min-width: $desktop) {
+  .more {
+    display: none;
+  }
+}
+
+#more:checked ~ .section__text--more {
+  display: block;
+}
+
+.section__text--accent {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: $desktop) {
+  .section__text--accent {
+    margin-top: 30px;
+  }
+}
+
+.less {
+  display: none;
+  font-family: $style_font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 3.6;
+  color: $button_color;
+}
+
+#more:checked ~ .about__more .less {
+  display: block;
+}
+
+#more:checked ~ .about__more .more {
+  display: none;
+}
+
+@media screen and (min-width: $tablet) {
+  .about__wrap {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .about__wrap {
+    margin-left: 76px;
+  }
+}
+
+.section__title--about {
+  font-family: $style_font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2.71;
+  color: $first_color;
+  text-align: center;
+}
+
+@media screen and (min-width: $tablet) {
+  .section__title--about {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .section__title--about {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .section__title--about {
+    font-size: 36px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+  }
+}
+
