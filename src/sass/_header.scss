@@ -106,9 +106,8 @@
   border: none;
   border-radius: 50%;
   outline: none;
-
   cursor: pointer;
-
+  cursor: url("../images/Box@1x.png"), pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -178,6 +177,7 @@
   .header__item-link{
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: url("../images/cursor.png"), pointer;
   }
   .header__item:hover .header__item-link{
     color: #AB816C;
