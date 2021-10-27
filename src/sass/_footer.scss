@@ -1,23 +1,24 @@
-.body__bg{
-    background-image: url(../images/footer-img/bublik-x1.png),url(../images/footer-img/bg-mobile-x1.png),url(../images/footer-img/footer-mobi-x1.png),url(../images/footer-img/bg-bm-mobile.png);
-    background-repeat: no-repeat;
-    background-size: 117px,100% 461px,87px,100% 1214px;
-    background-position: 0 0,0 0,100% 100%,bottom 216px left;
-    z-index: 999;
-    position: relative;
-}
-@media (-webkit-min-device-pixel-ratio: 2), not all, (min-resolution: 2dppx), (min-resolution: 192dpi){
-.body__bg {
-    background-image: url(../images/footer-img/bublik-x2.png),url(../images/footer-img/bg-mobile-x1.png),url(../images/footer-img/footer-mobi-x2.png),url(../images/footer-img/bg-bm-mobile.png);
-}
-}
-.body__container{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 @media screen and (min-width: 320px){
+    .body__bg{
+        background-image: url(../images/footer-img/bublik-x1.png),url(../images/footer-img/bg-mobile-x1.png),url(../images/footer-img/footer-mobi-x1.png),url(../images/footer-img/bg-bm-mobile.png);
+        background-repeat: no-repeat;
+        background-size: 117px,100% 461px,87px,100% 1214px;
+        background-position: 0 0,0 0,100% 100%,bottom 168px left;
+        z-index: 999;
+        position: relative;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2), not all, (min-resolution: 2dppx), (min-resolution: 192dpi){
+    .body__bg {
+        background-image: url(../images/footer-img/bublik-x2.png),url(../images/footer-img/bg-mobile-x1.png),url(../images/footer-img/footer-mobi-x2.png),url(../images/footer-img/bg-bm-mobile.png);
+    }
+    }
+    .body__container{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .body__container{
         width: 320px;
     }
@@ -36,15 +37,76 @@
     justify-content: center;
    }
    .footer__link--social{
+       position: relative;
        margin-right: 9.40px;
+       
        &:last-child{
            margin-right: 0px;
        }
+       
    }
    .footer__icon{
        width: 19px;
        height: 14.40px;
+       
    }
+
+   //Анимация иконок
+   
+       .tada:hover {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes tada {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+  -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  }
+  @keyframes tada {
+  0% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+  -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+  30%, 50%, 70%, 90% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+  40%, 60%, 80% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+  100% {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  } 
+
+  // Конец анимации
    .footer__address{
        margin-top: 34px;
    }
@@ -111,7 +173,7 @@
     .body__bg{
         background-image: url(../images/footer-img/bublik-desc-x1.png),url(../images/footer-img/sp-desc-x1.png),url(../images/footer-img/bg-desc.png),url(../images/footer-img/footer-desc-x1.png),url(../images/footer-img/bg-bm-desc.png);
         background-repeat: no-repeat;
-        background-size: 584px,130px,100% 1036px,320px,100% 1496px;
+        background-size: 679px,130px,100% 1036px,320px,100% 1496px;
         background-position: 100% 0,0 166px,0 0,100% 100%,0 100%;
     }
     @media (-webkit-min-device-pixel-ratio: 2), not all, (min-resolution: 2dppx), (min-resolution: 192dpi){

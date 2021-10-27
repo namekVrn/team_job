@@ -1,7 +1,6 @@
 @media screen and (min-width: $desktop) {
   body {
     background-color: $bgd-color;
-    position: relative;
   }
 }
 
@@ -11,7 +10,8 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  min-width: $mobile;
+  width: $mobile;
+  
 }
 
 @media screen and (min-width: $tablet) {
@@ -19,6 +19,7 @@
     padding-left: 12px;
     padding-right: 67px;
     display: flex;
+    width: $tablet;
   }
 }
 
@@ -28,6 +29,7 @@
     padding-right: 229px;
     position: absolute;
     top: 548px;
+    width: $desktop;
   }
 }
 
@@ -157,6 +159,3 @@
   }
 }
 
-.about__image {
-    z-index: -100;
-}

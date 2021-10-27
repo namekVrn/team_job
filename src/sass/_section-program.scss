@@ -243,3 +243,15 @@
   width: 19px;
   height: 18px;
 }
+
+#more-programm:checked ~ .section__text--more {
+  display: block;
+}
+
+#more-programm:checked ~ .about__more .less {
+  display: block;
+}
+
+#more-programm:checked ~ .about__more .more {
+  display: none;
+}

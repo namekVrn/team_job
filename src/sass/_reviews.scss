@@ -1,39 +1,37 @@
 @media screen and(max-width: 767px) {
   .reviews {
     padding-top: 13px;
-    background-color: $bgd-color;
+    // background-color: $bgd-color;
 
-    background-image: url(../images/reviews/bg-mobile.svg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    // background-image: url(../images/reviews/bg-mobile.svg);
+    // background-repeat: no-repeat;
+    // background-position: top;
+    // background-size: cover;
 
-    background-position-y: 10px;
+    // background-position-y: 10px;
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/reviews/bg-mobile@2x.svg);
-    }
+    // @media screen and (min-device-pixel-ratio: 2),
+    //   screen and (min-resolution: 192dpi),
+    //   screen and (min-resolution: 2dppx) {
+    //   background-image: url(../images/reviews/bg-mobile@2x.svg);
+    // }
   }
 }
 
 @media screen and(min-width: 768px) {
   .reviews {
     padding: 13px 71px 40px;
-    background-image: url(../images/reviews/bg-tablet.svg);
-    padding: 0;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    // background-image: url(../images/reviews/bg-tablet.svg);
+    // background-repeat: no-repeat;
+    // background-position: top;
+    // background-size: cover;
+    
 
-    background-position-y: -25px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/reviews/bg-tablet@2x.svg);
-    }
+    // @media screen and (min-device-pixel-ratio: 2),
+    //   screen and (min-resolution: 192dpi),
+    //   screen and (min-resolution: 2dppx) {
+    //   background-image: url(../images/reviews/bg-tablet@2x.svg);
+    // }
   }
 }
 
@@ -41,18 +39,16 @@
   .reviews {
     margin: 0 auto;
     padding: 13px 330px 68px;
-    background-image: url(../images/reviews/bg-desk.svg);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
+    // background-image: url(../images/reviews/bg-desk.svg);
+    // background-repeat: no-repeat;
+    // background-position: top;
+    // background-size: cover;
 
-    background-position-y: -13px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/reviews/bg-desk@2x.svg);
-    }
+    // @media screen and (min-device-pixel-ratio: 2),
+    //   screen and (min-resolution: 192dpi),
+    //   screen and (min-resolution: 2dppx) {
+    //   background-image: url(../images/reviews/bg-desk@2x.svg);
+    // }
   }
 }
 
@@ -79,6 +75,9 @@
     font-size: 36px;
     line-height: 1.81;
     padding-bottom: 24px;
+  }
+  @media screen and(min-width: 768px) {
+    margin-top: 21px;
   }
 }
 
