@@ -12,9 +12,15 @@
   }
 }
 
-.section {
-  background-color: $bgd-color;
+@media screen and (min-width: $desktop) {
+  .container {
+    margin-top: 462px;
 }
+}
+
+// .section {
+//   background-color: $bgd-color;
+// }
 
 .text__content {
   @media screen and (min-width: $tablet) {
@@ -28,9 +34,6 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 2.71;
-
-  text-align: center;
-
   color: $first_color;
 }
 
@@ -40,8 +43,31 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-
   color: $first_color;
+}
+
+@media screen and (min-width: 320px){
+  .section__title{
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px){
+  .container{
+    width: 635px;
+    padding: 0;
+  }
+  .section__title{
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1280px){
+  .section__text {
+      font-size: 18px;
+      line-height: 1.2;
+  }
+  .container{
+    width: 824px;
+  }
 }
 
 .section__text--indent {
@@ -70,13 +96,11 @@
 
 .button {
   margin-bottom: 30px;
-
   font-family: $style_font;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 3.61;
-
   border: none;
   background-color: transparent;
   color: $button_color;
@@ -184,4 +208,16 @@
 
   width: 19px;
   height: 18px;
+}
+
+#more-programm:checked ~ .section__text--more {
+  display: block;
+}
+
+#more-programm:checked ~ .about__more .less {
+  display: block;
+}
+
+#more-programm:checked ~ .about__more .more {
+  display: none;
 }
