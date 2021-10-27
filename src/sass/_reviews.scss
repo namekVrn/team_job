@@ -25,7 +25,6 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -53,6 +52,7 @@
 }
 
 .reviews-wraper {
+  position: relative;
   max-width: 656px;
   margin: 0 auto;
   padding: 0 15px;
@@ -187,8 +187,12 @@
   background: $button_color;
 }
 
-.reviews__text-wrap {
-  @media screen and(max-width: 767px) {
-    display: none;
-  }
+.reviews__Elisabeth {
+  position: absolute;
+  right: 0;
+}
+
+.reviews__john {
+  position: absolute;
+  left: 0;
 }
