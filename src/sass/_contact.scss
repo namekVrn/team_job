@@ -23,6 +23,10 @@
     line-height: 2.71px;
     color: #2E2520;
     margin-bottom: 35px;
+    @media screen and(min-width: 1280px) {
+        font-size: 36px;
+        line-height: 1.81px;
+    }
 }
 .contact-form__text {
     font-family: $first_font;
@@ -45,12 +49,9 @@
     margin-left: auto;
     margin-right: auto;
     width: 265px;
-    &::placeholder {
-        font-family: 'Montserrat', sans-serif;;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        color: rgba(171, 129, 108, 0.5);
+
+    &:invalid:not(:placeholder-shown) {
+        border-color: red;
     }
     @media screen and(min-width: 768px) {
         width: 410px;
@@ -58,7 +59,7 @@
     @media screen and(min-width: 1280px) {
         width: 430px;
     }
-}
+
 .contact-form__input--text {
     margin-bottom: 25px;
 }
@@ -66,6 +67,7 @@
     display: inline-block;
     background-color: $button_color;
     border: none;
+    cursor: pointer;
     border-radius: 25px;
     padding-top: 15px;
     padding-right: 57px;
@@ -78,8 +80,16 @@
     line-height: 3.61px;
     color: #FFFFFF;
     margin-bottom: 47px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        background-color: #BE724C;
+    }
     @media screen and(min-width: 1280px) {
+        padding-top: 19px;
         padding-right: 59px;
+        padding-bottom: 19px;
         padding-left: 59px;
+        font-size: 24px;
+        line-height: 2.71px;
     }
 }
