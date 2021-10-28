@@ -100,6 +100,7 @@
 
       &:not(:placeholder-shown):required:invalid {
         border-color: red;
+        outline: none;
       }
 
       &::placeholder {
@@ -107,15 +108,14 @@
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
+        outline: none;
         line-height: 20px;
         color: rgba(171, 129, 108, 0.5);
       }
 
       
     }
-   
-
-    }
+  
 
     .reg-button {
       margin-bottom: 34px;
