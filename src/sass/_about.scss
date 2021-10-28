@@ -2,6 +2,10 @@
   body {
     background-color: $bgd-color;
   }
+  .about__section{
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .about__container {
