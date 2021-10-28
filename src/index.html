@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>Bublik.net</title>
+    <link type="image/png" sizes="120x120" rel="icon" href="./images/favicon.png">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -18,12 +19,15 @@
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
    
     <include src="./partials/header.html"></include>
+  <main>
     <include src="./partials/about.html"></include>
     <include src="./partials/section-program.html"></include>
     <include src="./partials/reviews.html"></include>
     <include src="./partials/registration.html"></include>
     <include src="./partials/contact.html"></include>
+  </main>
     <include src="./partials/footer.html"></include>
     <script src="./index.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>

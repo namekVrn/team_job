@@ -110,6 +110,11 @@
         line-height: 20px;
         color: rgba(171, 129, 108, 0.5);
       }
+
+      
+    }
+   
+
     }
 
     .reg-button {
@@ -125,11 +130,11 @@
       background: #ab816c;
       border-color: #ab816c;
       border-radius: 25px;
-
+      border: none;
       font-family: Caveat Brush;
       font-style: normal;
       font-weight: normal;
-      font-size: 18px;
+      font-size: 24px;
       line-height: 65px;
       text-align: center;
       color: #ffffff;
@@ -211,7 +216,7 @@
     font-family: Caveat Brush;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 65px;
     text-align: center;
     color: #ffffff;
@@ -223,6 +228,7 @@
     justify-content: center;
     align-items: center;
     border: none;
+    
   }
 
   .reg-form {
@@ -275,6 +281,7 @@
     border-radius: 4px;
     outline: none;
     background: #fffff9;
+    outline: none;
 
     &:not(:placeholder-shown):required:invalid {
       border-color: red;
@@ -309,7 +316,7 @@
 @media screen and (min-width: 1280px) {
   .reg {
     max-width: 822px;
-    margin-top: 143px;
+    margin-top: 68px;
     margin-bottom: 77px;
   }
 
