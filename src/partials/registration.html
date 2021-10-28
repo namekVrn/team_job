@@ -13,11 +13,11 @@
         <p class="reg-form__title">Apply your personal info for registration</p>
     
         <label class="reg-form__label" for="name">
-            <input class="reg-form__input" type="text" name="name" id="name" placeholder="Your name">
+            <input class="reg-form__input" type="text" name="name" id="name" placeholder="Your name"pattern="^[A-Za-zА-Яа-яЁё\s]{6,}" required>
         </label>
         
         <label class="reg-form__label" for="phone">
-            <input class="reg-form__input" type="text" name="phone" id="phone"placeholder="Phone number">
+            <input class="reg-form__input" type="number" name="phone" id="phone"placeholder="Phone number" required>
         </label>
 
         <label class="reg-form__label" for="email">

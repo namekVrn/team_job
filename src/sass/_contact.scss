@@ -49,6 +49,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 265px;
+    background-color: #FFFFF9;
 
     &:invalid:not(:placeholder-shown) {
         border-color: red;
