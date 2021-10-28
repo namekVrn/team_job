@@ -93,19 +93,28 @@
     .reg-form__input {
       width: 265px;
       height: 20px;
-      border: none;
+      border-color: transparent;
+      border-radius: 4px;
+      outline: none;
       background: #fffff9;
+
+      &:not(:placeholder-shown):required:invalid {
+        border-color: red;
+      }
+
+      &::placeholder {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(171, 129, 108, 0.5);
+      }
+
       
     }
    
-    .reg-form__input ::placeholder {
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 20px;
-      color: rgba(171, 129, 108, 0.5);
-      
+
     }
 
     .reg-button {
@@ -116,7 +125,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
+      cursor: pointer;
+      border: none;
       background: #ab816c;
       border-color: #ab816c;
       border-radius: 25px;
@@ -265,12 +275,17 @@
   }
 
   .reg-form__input {
-    border: none;
     width: 234px;
     height: 20px;
-    border: none;
+    border-color: transparent;
+    border-radius: 4px;
+    outline: none;
     background: #fffff9;
     outline: none;
+
+    &:not(:placeholder-shown):required:invalid {
+      border-color: red;
+    }
 
     &::placeholder {
       font-family: Montserrat;
@@ -319,6 +334,11 @@
     z-index: -1;
   }
 
+  .reg-info__title {
+    font-size: 36px;
+    line-height: 65px;
+  }
+
   .reg-form__title::before {
     position: absolute;
     content: '';
@@ -327,5 +347,27 @@
     width: 190px;
     top: 50%;
     left: 21%;
+  }
+
+  .reg-form__input {
+    width: 234px;
+    height: 20px;
+    border-color: transparent;
+    border-radius: 4px;
+    outline: none;
+    background: #fffff9;
+
+    &:not(:placeholder-shown):required:invalid {
+      border-color: red;
+    }
+  }
+
+  .img-cracker {
+    position: absolute;
+    top: -87px;
+    right: -67px;
+    z-index: -1;
+    width: 544px;
+    height: 544px;
   }
 }
